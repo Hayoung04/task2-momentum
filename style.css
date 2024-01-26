@@ -1,0 +1,149 @@
+.hidden {
+  display: none !important;
+}
+
+img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column; /*주축 설정*/
+  justify-content: flex-end; /*items 위치 설정*/
+  align-items: center; /*items의 주축 위치 설정 */
+
+  position: fixed;
+  bottom: 53%;
+  left: 25%;
+  width: 50%; /*가로폭 화면 50%로 설정*/
+
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 1000;
+  font-style: normal;
+  line-height: 25px;
+  font-size: 17px;
+}
+
+#clock {
+  font-family: "Song Myung", serif;
+  font-weight: 100;
+  font-size: 100px;
+  font-style: normal;
+  text-shadow: 1.5px 1.5px 1px rgb(249, 248, 229);
+
+  position: fixed;
+  width: 100%;
+  left: 0;
+
+  display: flex;
+  flex-direction: column; /*주축 설정*/
+  justify-content: flex-end; /*items 위치 설정*/
+  align-items: center; /*items의 주축 위치 설정 */
+}
+
+#login-form,
+#greeting {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 435px;
+  display: flex;
+  padding: 0;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  font-family: "Song Myung", serif;
+  font-weight: 80;
+  font-size: 40px;
+  font-style: normal;
+  color: rgb(58, 130, 89);
+  text-shadow: 1.5px 1.5px 1px rgb(249, 248, 229);
+}
+
+#login-form > input:first-child {
+  /*first-child를 함으로써 login-form 안에 있는 input중 첫번째 요소만 선택 가능하게 됨*/
+  width: 200px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(58, 130, 89);
+  border-radius: 5px;
+}
+
+#login-form > input:last-child {
+  width: 55px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(58, 130, 89);
+  border-radius: 5px;
+}
+
+#todo-form {
+  position: fixed;
+  width: 100%;
+  left: 55px;
+  bottom: 180px;
+  display: flex;
+}
+
+#todo-form > input {
+  /*>input을 해주니까 네모 칸이 바뀜*/
+  width: 200px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(58, 130, 89);
+  border-radius: 5px;
+}
+
+#todo-list {
+  position: fixed;
+  left: 50px;
+  right: 50px;
+  bottom: 75px;
+  display: flex;
+  padding: 0;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  line-height: 40px;
+  float: left;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+}
+
+#todo-list > li {
+  margin-left: 50px; /* 원하는 우측 간격 설정 */
+}
+
+#weather {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 1000;
+  font-style: normal;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+.rectangle {
+  width: 92.8%;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.549);
+
+  position: fixed;
+  left: 55px;
+  bottom: 15px;
+}
